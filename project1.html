@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CS345 Project1</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/project1.css">
+  <link rel="stylesheet" href="css/introjs.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <nav class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopuo="true"aria-expanded="false">Edit<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#" onclick="pushButton.click()">Push<span class="pull-right">Alt+u</span></a></li>
+              <li><a href="#" onclick="popButton.click()">Pop<span class="pull-right">Alt+O</span></a></li>
+              <li><a href="#"onclick="peekButton.click()">Peek<span class="pull-right">Alt+e</span></a></li>
+              <li><a href="#"onclick="sizeButton.click()">Size<span class="pull-right">Alt+S</span></a></li>
+              <li><a href="#"onclick="isEmptyButton.click()">isEmpty<span class="pull-right">Alt+M</span></a></li>
+              <li class="divider" role="seperator"></li>
+              <li><a href="#" id="#clearStack" onclick="clearStack.click();">Clear Stack<span class="pull-right">Ctrl+Alt+c</span></a></li>
+              <li><a href="#" id="clearLog" onclick="clearLog.click();">Clear Log<span class="pull-right">Alt+c</span></a></li>
+            </ul>
+          </li><!--Close editor-->
+
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopuo="true"aria-expanded="false">Settings<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu"><a href="#">Language</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">English</a></li>
+                  <li><a href="#">Spanish</a></li>
+                  <li><a href="#">Chinese</a></li>
+                </ul>
+              </li> <!--close Language-->
+              <li class="divider" role="seperator"></li>
+              <li><a href="#">Font Face</a></li>
+              <li><a href="#">Font Size</a></li>
+              <li><a href="#">Font Style</a></li>
+            </ul>
+          </li> <!--Close Settings-->
+          <li><a href="#" onclick="introJs().start();">Tutorial</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <h1 class="text-center" data-step="1" data-intro="This project is to demo how stack is processed in a last in, first out manner.">Stack Demo</h1>
+      <div class="row">
+        <div class="col-xs-3">
+          <ul class="nav text-center actionBar">
+            <li><label for="">Add to Stack</label></li>
+            <li><input type="number" id="inputNumber" class="form-control" placeholder="Enter a number" data-step="2" data-intro="Enter a number into the stack."></li>
+            <li><button type="button" class="btn btn-default btn-block" id="pushButton" data-step="3" data-intro="Click this button to put the element to the top of the stack.">Push</button></li>
+            <li><button type="button" class="btn btn-default btn-block" id="popButton" data-step="4" data-intro="Click this button to remove the element from the top of the stack.">Pop</button></li>
+            <li><button type="button" class="btn btn-default btn-block" id="peekButton" data-step="5" data-intro="">Peek</button></li>
+            <li><button type="button" class="btn btn-default btn-block" id="sizeButton" data-step="6" data-intro="">Size</button></li>
+            <li><button type="button" class="btn btn-default btn-block" id="isEmptyButton" data-step="7" data-intro="">isEmpty</button></li>
+          </ul>
+
+        </div><!--Close 1st Column-->
+        <div class="col-xs-9">
+          <label for="showStack" class="control-label sr-only" >This text area is to display the current stack function.</label>
+            <textarea style="height:200px;" id="showStack" class="form-control textAreaControl"></textarea>
+          <label for="showLog" class="control-label sr-only" >This text area is to display the stack operation's log information.</label>
+            <textarea style="height:200px;" id="showLog" class="form-control textAreaControl" readonly></textarea>
+
+        </div><!--Close 2nd Column-->
+      </div>
+    </div><!--Close Container-->
+    <script type="text/javascript" src="js/project1.js"></script>
+    <script type="text/javascript" src="js/intro.js"></script>
+  </body>
+  </html>
