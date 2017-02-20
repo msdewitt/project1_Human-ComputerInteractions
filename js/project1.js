@@ -98,7 +98,7 @@
   $('#clearStack').click(function(){
     stack = new createStack();
     $('#showStack').val(stack.toString());
-    $('#showLog').val("The stack has been cleared!" + $('#showLog').val());
+    $('#showLog').val("The stack has been cleared!");
   });
   $('#clearLog').click(function(){
     $('#showLog').val("");
