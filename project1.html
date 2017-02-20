@@ -40,9 +40,25 @@
                 </ul>
               </li> <!--close Language-->
               <li class="divider" role="seperator"></li>
-              <li><a href="#">Font Face</a></li>
-              <li><a href="#">Font Size</a></li>
-              <li><a href="#">Font Style</a></li>
+              <li class="dropdown-submenu"><a href="#">Font Face</a><ul class="dropdown-menu">
+                <li><a href="#" id="fontArial">Arial</a></li>
+                <li><a href="#" id="fontTimes">Times New Roman</a></li>
+                <li><a href="#" id="fontCalibri">Calibri</a></li>
+              </ul></li><!-- Close font face -->
+              <li class="dropdown-submenu"><a href="#">Font Size</a>
+              <ul class="dropdown-menu">
+                <li><a href="#" id="fontSizeIncrease">+2</a></li>
+                <li><a href="#" id="fontSizeDecrease">-2</a></li>
+              </ul></li> <!-- Close size -->
+              <li class="dropdown-submenu"><a href="#">Font Style</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" id="fontStyleBold"><input type="checkbox"> <strong>Bold</strong></a></li>
+                  <li><a href="#" id="fontStyleUnderline"><input type="checkbox"> <u>Underline</u></a></li>
+                  <li><a href="#" id="fontStyleItalic"><input type="checkbox"> <i>Italic</i></a></li>
+
+                </ul>
+
+              </li>
             </ul>
           </li> <!--Close Settings-->
           <li><a href="#" onclick="introJs().start();">Tutorial</a></li>
