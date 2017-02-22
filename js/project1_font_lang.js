@@ -34,3 +34,45 @@ $('#fontSizeDecrease').click(function(){
   $('button').css("font-size", actualSize + unit);
   $('textarea').css("font-size", actualSize + unit);
 });
+
+//Font Styles
+
+$('#fontStyleBold').click(function(){
+  console.log(this)
+  if(this.checked){
+    $('body').css("font-weight", "bold");
+    $('button').css("font-weight", "bold");
+    $('textarea').css("font-weight", "bold");
+  }
+  else{
+    $('body').css("font-weight", "");
+    $('button').css("font-weight", "");
+    $('textarea').css("font-weight", "");
+  }
+});
+
+$('#fontStyleUnderline').click(function(){
+  if(this.checked){
+    $('body').css("text-decoration", "underline");
+    $('button').css("text-decoration", "underline");
+    $('textarea').css("text-decoration", "underline");
+  }
+  else{
+    $('body').css("text-decoration", "");
+    $('button').css("text-decoration", "");
+    $('textarea').css("text-decoration", "");
+  }
+});
+
+$('#fontStyleItalic').click(function(){
+  if(this.checked){
+    $('body').css("font-style", "italic");
+    $('button').css("font-style", "italic");
+    $('textarea').css("font-style", "italic");
+  }
+  else{
+    $('body').css("font-style", "");
+    $('button').css("font-style", "");
+    $('textarea').css("font-style", "");
+  }
+});
