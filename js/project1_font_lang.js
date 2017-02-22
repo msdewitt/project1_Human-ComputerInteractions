@@ -38,7 +38,6 @@ $('#fontSizeDecrease').click(function(){
 //Font Styles
 
 $('#fontStyleBold').click(function(){
-  console.log(this)
   if(this.checked){
     $('body').css("font-weight", "bold");
     $('button').css("font-weight", "bold");
