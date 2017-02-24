@@ -1,0 +1,16 @@
+{
+  "actionBar" : {
+    "push":"Apilar",
+    "pop":"Desapilar",
+    "peek":"Leer último",
+    "size": "Tamaño",
+    "isEmpty": "Esta Vacía"
+  },
+  "menuBar":{
+    "edit": "Editar",
+    "settings": "Ajustes",
+    "tutorials": "Tutoriales",
+    "contact": "Contacto"
+  },
+  "inputLabel": "Añadir a la pila"
+}
