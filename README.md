@@ -1,4 +1,4 @@
-# project1_Human-ComputerInteractions
+# Stack Demo
 A website to educate visitors on the stack model.
 
 ## Technical Overview
