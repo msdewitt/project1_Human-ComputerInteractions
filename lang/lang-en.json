@@ -12,5 +12,6 @@
     "tutorials": "Tutorials",
     "contact": "Contact"
   },
-  "inputLabel": "Add to Stack"
+  "inputLabel": "Add to Stack",
+  "heading": "Stack Demo"
 }
