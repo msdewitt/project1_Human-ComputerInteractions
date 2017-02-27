@@ -76,6 +76,8 @@ $('#fontStyleItalic').click(function(){
   }
 });
 $('#langSP').click(function(){
-  console.log("Test");
   $("[data-localize]").localize("lang",{ pathPrefix:"lang", language:"sp"}); //triggers the dictionary file
+});
+$('#langEN').click(function(){
+  $("[data-localize]").localize("lang",{ pathPrefix:"lang", language:"en"}); //triggers the dictionary file
 });

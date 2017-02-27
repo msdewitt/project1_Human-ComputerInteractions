@@ -1,0 +1,16 @@
+{
+  "actionBar" : {
+    "push":"Push",
+    "pop":"Pop",
+    "peek":"Peek",
+    "size": "Size",
+    "isEmpty": "isEmpty"
+  },
+  "menuBar":{
+    "edit": "Edit",
+    "settings": "Settings",
+    "tutorials": "Tutorials",
+    "contact": "Contact"
+  },
+  "inputLabel": "Add to Stack"
+}
