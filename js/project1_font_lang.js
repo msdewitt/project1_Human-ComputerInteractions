@@ -76,8 +76,14 @@ $('#fontStyleItalic').click(function(){
   }
 });
 $('#langSP').click(function(){
+  console.log("Test Spanish");
   $("[data-localize]").localize("lang",{ pathPrefix:"lang", language:"sp"}); //triggers the dictionary file
 });
 $('#langEN').click(function(){
+  console.log("Test English");
   $("[data-localize]").localize("lang",{ pathPrefix:"lang", language:"en"}); //triggers the dictionary file
+});
+$('#langGE').click(function(){
+  console.log("Test German");
+  $("[data-localize]").localize("lang",{ pathPrefix:"lang", language:"ge"}); //triggers the dictionary file
 });
