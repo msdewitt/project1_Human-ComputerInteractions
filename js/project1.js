@@ -70,11 +70,11 @@
   $('#popButton').click(function(){
     console.log("Stack size: " + stack.size);
     if(stack.isEmpty()){
-    $('#showLog').val("You cannot pop from an empty stack.\n" + $('#showLog').val());
+    $('#showLog').val($('#infoPopError').html() +"\n" + $('#showLog').val());
     }else{
     var result = stack.pop();
     console.log((stack.toString()))
-    $('#showLog').val(result + " was popped from the stack. \n" + $('#showLog').val());
+    $('#showLog').val(result + " " +$('#infoPop').html() +"\n" + $('#showLog').val());
     $('#showStack').val(stack.toString());
   }
   });

@@ -17,5 +17,7 @@
   "info":{
     "push": "Fue empujado sobre la pila!",
     "pushError": "El cuadro de entrada no puede estar vacío.",
+    "pop": "Fue sacado de la pila.",
+    "popError":"No se puede hacer estallar desde una pila vacía."
   }
 }
