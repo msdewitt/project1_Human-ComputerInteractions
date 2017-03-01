@@ -13,5 +13,9 @@
     "contact": "Contacto"
   },
   "inputLabel": "Añadir a la pila",
-  "heading": "Demostración de la pila"
+  "heading": "Demostración de la pila",
+  "info":{
+    "push": "Fue empujado sobre la pila!",
+    "pushError": "El cuadro de entrada no puede estar vacío.",
+  }
 }

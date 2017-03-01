@@ -61,10 +61,10 @@
     if(input !=""){
       stack.push(input);
     $('#showStack').val(stack.toString());
-    $('#showLog').val(input + " was pushed onto the stack. \n" + $('#showLog').val());
+    $('#showLog').val(input +" "+ $('#infoPush').html() +"\n" + $('#showLog').val());
     }
     else{
-    $('#showLog').val("The input box cannot be empty.\n" + $('#showLog').val());
+    $('#showLog').val($('#infoPushError').html()+"\n" + $('#showLog').val());
     }
     });
   $('#popButton').click(function(){
