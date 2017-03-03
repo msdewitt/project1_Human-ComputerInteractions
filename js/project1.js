@@ -80,7 +80,7 @@
   });
   $('#peekButton').click(function(){
     if (stack.isEmpty()){
-      $('#showLog').val($('#infoPeekError').html()+ $('#showLog').val());
+      $('#showLog').val($('#infoPeekError').html()+"\n"+ $('#showLog').val());
     }else{
       $('#showLog').val($('#infoPeek').html() + " "+ stack.peek() +"\n" + $('#showLog').val());
     }
