@@ -80,25 +80,25 @@
   });
   $('#peekButton').click(function(){
     if (stack.isEmpty()){
-      $('#showLog').val("You cannot peek from an empty stack.\n" + $('#showLog').val());
+      $('#showLog').val($('#infoPeekError').html()+ $('#showLog').val());
     }else{
-      $('#showLog').val(" The top of the stack is: " + stack.peek() +"\n" + $('#showLog').val());
+      $('#showLog').val($('#infoPeek').html() + " "+ stack.peek() +"\n" + $('#showLog').val());
     }
   });
   $('#sizeButton').click(function(){
-    $('#showLog').val("Stack size: " + stack.size + "\n" + $('#showLog').val());
+    $('#showLog').val($('#infoSize').html() + stack.size + "\n" + $('#showLog').val());
   });
   $('#isEmptyButton').click(function(){
     if(stack.isEmpty()){
-      $('#showLog').val("The stack is empty.\n" + $('#showLog').val());
+      $('#showLog').val($('#infoIsEmpty').html()+"\n" + $('#showLog').val());
     }else{
-        $('#showLog').val("The stack is not empty.\n" + $('#showLog').val());
+        $('#showLog').val($('#infoIsEmptyError').html()+"\n" + $('#showLog').val());
     }
   });
   $('#clearStack').click(function(){
     stack = new createStack();
     $('#showStack').val(stack.toString());
-    $('#showLog').val("The stack has been cleared!");
+    $('#showLog').val($('#infoClearStack').html());
   });
   $('#clearLog').click(function(){
     $('#showLog').val("");

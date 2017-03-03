@@ -22,59 +22,59 @@
       </button>
       <nav class="collapse navbar-collapse" id="collapseMenu">
         <ul class="nav navbar-nav">
-          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopuo="true"aria-expanded="false">Edit<span class="caret"></span></a>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopuo="true"aria-expanded="false"  data-localize="menuBar.edit">Edit<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#" onclick="pushButton.click()">Push<span class="pull-right">Alt+u</span></a></li>
-              <li><a href="#" onclick="popButton.click()">Pop<span class="pull-right">Alt+O</span></a></li>
-              <li><a href="#"onclick="peekButton.click()">Peek<span class="pull-right">Alt+e</span></a></li>
-              <li><a href="#"onclick="sizeButton.click()">Size<span class="pull-right">Alt+S</span></a></li>
-              <li><a href="#"onclick="isEmptyButton.click()">isEmpty<span class="pull-right">Alt+M</span></a></li>
+              <li><a href="#" onclick="pushButton.click()" data-localize="actionBar.push">Push<span class="pull-right">Alt+u</span></a></li>
+              <li><a href="#" onclick="popButton.click()" data-localize="actionBar.pop">Pop<span class="pull-right">Alt+O</span></a></li>
+              <li><a href="#"onclick="peekButton.click()" data-localize="actionBar.peek">Peek<span class="pull-right">Alt+e</span></a></li>
+              <li><a href="#"onclick="sizeButton.click()" data-localize="actionBar.size">Size<span class="pull-right">Alt+S</span></a></li>
+              <li><a href="#"onclick="isEmptyButton.click()" data-localize="actionBar.isEmpty">isEmpty<span class="pull-right">Alt+M</span></a></li>
               <li class="divider" role="seperator"></li>
-              <li><a href="#" id="clearStack" >Clear Stack<span class="pull-right">Ctrl+Alt+c</span></a></li>
-              <li><a href="#" id="clearLog" >Clear Log<span class="pull-right">Alt+c</span></a></li>
+              <li><a href="#" id="clearStack" data-localize="actionBar.clearStack">Clear Stack<span class="pull-right">Ctrl+Alt+c</span></a></li>
+              <li><a href="#" id="clearLog" data-localize="actionBar.clearLog">Clear Log<span class="pull-right">Alt+c</span></a></li>
             </ul>
           </li><!--Close editor-->
 
-          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopuo="true"aria-expanded="false">Settings<span class="caret"></span></a>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopuo="true"aria-expanded="false"  data-localize="menuBar.settings">Settings<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li class="dropdown-submenu"><a href="#">Language</a>
                 <ul class="dropdown-menu">
-                  <li><a href="#" id="langEN">English</a></li>
-                  <li><a href="#" id="langSP">Spanish</a></li>
-                  <li><a href="#" id="langGE">German</a></li>
+                  <li><a href="#" id="langEN" data-localize="drop.en">English</a></li>
+                  <li><a href="#" id="langSP"data-localize="drop.sp">Spanish</a></li>
+                  <li><a href="#" id="langGE"data-localize="drop.ge">German</a></li>
                 </ul>
               </li> <!--close Language-->
               <li class="divider" role="seperator"></li>
-              <li class="dropdown-submenu"><a href="#">Font Face</a><ul class="dropdown-menu">
+              <li class="dropdown-submenu"><a href="#"data-localize="drop.fontFace">Font Face</a><ul class="dropdown-menu">
                 <li><a href="#" id="fontArial">Arial</a></li>
                 <li><a href="#" id="fontTimes">Times New Roman</a></li>
                 <li><a href="#" id="fontCalibri">Calibri</a></li>
               </ul></li><!-- Close font face -->
-              <li class="dropdown-submenu"><a href="#">Font Size</a>
+              <li class="dropdown-submenu"><a href="#" data-localize="drop.fontSize">Font Size</a>
               <ul class="dropdown-menu">
                 <li><a href="#" id="fontSizeIncrease">+2</a></li>
                 <li><a href="#" id="fontSizeDecrease">-2</a></li>
               </ul></li> <!-- Close size -->
-              <li class="dropdown-submenu"><a href="#">Font Style</a>
+              <li class="dropdown-submenu"><a href="#" data-localize="drop.fontStyle">Font Style</a>
                 <ul class="dropdown-menu">
-                  <li><a href="#" ><input type="checkbox" id="fontStyleBold"> <strong>Bold</strong></a></li>
-                  <li><a href="#"><input type="checkbox" id="fontStyleUnderline"> <u>Underline</u></a></li>
-                  <li><a href="#" ><input type="checkbox" id="fontStyleItalic"> <i>Italic</i></a></li>
+                  <li><a href="#" data-localize="drop.fontBold"><input type="checkbox" id="fontStyleBold"> <strong>Bold</strong></a></li>
+                  <li><a href="#" data-localize="drop.fontUnderline"><input type="checkbox" id="fontStyleUnderline"> <u>Underline</u></a></li>
+                  <li><a href="#" data-localize="drop.fontItalic"><input type="checkbox" id="fontStyleItalic"> <i>Italic</i></a></li>
 
                 </ul>
 
               </li><!-- Close font style -->
             </ul>
           </li> <!--Close Settings-->
-          <li><a href="#" onclick="introJs().start();">Tutorial</a></li>
-          <li><a href="#" data-toggle="modal" data-target="#contact">Contact</a></li>
+          <li><a href="#" onclick="introJs().start();"data-localize="menuBar.tutorial">Tutorial</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#contact"data-localize="menuBar.contact">Contact</a></li>
         </ul>
         <div class="modal fade" id="contact" role="dialog">
           <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" arial-label="Close the window." data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Contact Info</h4>
+                  <h4 class="modal-title" data-localize="contactInfo">Contact Info</h4>
                 </div>
                 <div class="modal-body">
                   <div class="pull-left">
@@ -85,7 +85,7 @@
 
                   <p>Matheu DeWitt</p>
                   <p>msdewitt@bsu.edu</p>
-                  <p>Phone: (812)-543-8882</p>
+                  <p>(812)-543-8882</p>
                   </div>
                 </div>
                 <div class="modal-footer">
@@ -122,16 +122,34 @@
       </div>
     </div><!--Close Container-->
     <div class="hidden" id="infoPush" data-localize="info.push">
-      was pushed onto the stack.
+      was pushed onto the stack!
     </div>
     <div class="hidden" id="infoPushError" data-localize="info.pushError">
       The input box cannot be empty.
     </div>
-    <div class="hidden" id="infoPop" data-localize="info.pushError">
+    <div class="hidden" id="infoPop" data-localize="info.pop">
       was popped from the stack.
     </div>
-    <div class="hidden" id="infoPopError" data-localize="info.pushError">
+    <div class="hidden" id="infoPopError" data-localize="info.popError">
       You cannot pop from an empty stack.
+    </div>
+    <div class="hidden" id="infoPeek" data-localize="info.peek">
+      The top of the stack is:
+    </div>
+    <div class="hidden" id="infoPeekError" data-localize="info.peekError">
+      You cannot peek from an empty stack.
+    </div>
+    <div class="hidden" id="infoSize" data-localize="info.size">
+      Stack size:
+    </div>
+    <div class="hidden" id="infoIsEmpty" data-localize="info.isEmpty">
+      The stack is empty.
+    </div>
+    <div class="hidden" id="infoIsEmptyError" data-localize="info.isEmptyError">
+      The stack is not empty.
+    </div>
+    <div class="hidden" id="infoClearStack" data-localize="info.clearStack">
+      The stack has been cleared!
     </div>
     <script type="text/javascript" src="js/project1.js"></script>
     <script type="text/javascript" src="js/intro.js"></script>

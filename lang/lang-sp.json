@@ -4,20 +4,41 @@
     "pop":"Desapilar",
     "peek":"Leer último",
     "size": "Tamaño",
-    "isEmpty": "Esta Vacía"
+    "isEmpty": "Esta Vacía",
+    "clearStack": "Borrar la pila",
+    "clearLog": "Borrar registro"
   },
   "menuBar":{
     "edit": "Editar",
     "settings": "Ajustes",
-    "tutorials": "Tutoriales",
+    "tutorial": "Tutorial",
     "contact": "Contacto"
   },
   "inputLabel": "Añadir a la pila",
   "heading": "Demostración de la pila",
+  "contactInfo": "Datos de contacto",
+
   "info":{
     "push": "Fue empujado sobre la pila!",
     "pushError": "El cuadro de entrada no puede estar vacío.",
     "pop": "Fue sacado de la pila.",
-    "popError":"No se puede hacer estallar desde una pila vacía."
+    "popError":"No se puede hacer estallar desde una pila vacía.",
+    "peek": "La parte superior de la pila es:",
+    "peekError":"No se puede mirar desde una pila vacía.",
+    "size": "Tamaño de la pila:",
+    "isEmpty":"La pila está vacía.",
+    "isEmptyError":"La pila no es vacío.",
+    "clearStack":"¡La pila ha sido borrada!"
+  },
+  "drop":{
+    "en":"Inglés",
+    "sp":"Español",
+    "ge":"Alemán",
+    "fontFace":"Perfil delantero",
+    "fontSize":"Tamaño de fuente",
+    "fontStyle":"Estilo de fuente",
+    "fontBold":"Negrita",
+    "fontUnderline":"Subrayar",
+    "fontItalic":"Itálico"
   }
 }

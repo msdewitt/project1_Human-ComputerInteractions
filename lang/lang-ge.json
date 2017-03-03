@@ -4,7 +4,9 @@
     "pop":"Pop",
     "peek":"Spähen",
     "size": "Größe",
-    "isEmpty": "Ist leer"
+    "isEmpty": "Ist leer",
+    "clearStack": "Klare Stapel",
+    "clearLog": "Protokoll löschen"
   },
   "menuBar":{
     "edit": "Bearbeiten",
@@ -13,5 +15,30 @@
     "contact": "Kontakt"
   },
   "inputLabel": "Zu Stapel hinzufügen",
-  "heading": "Stapel-Demo"
+  "heading": "Stapel-Demo",
+  "contactInfo": "Kontaktinformation",
+
+  "info":{
+    "push": "Wurde auf den Stapel geschoben!",
+    "pushError": "Das Eingabefeld kann nicht leer sein.",
+    "pop": "Wurde aus dem Stapel geknallt",
+    "popError":"Sie können nicht aus einem leeren Stapel platzieren.",
+    "peek": "Die Oberseite des Stapels ist:",
+    "peekError":"Sie können nicht von einem leeren Stapel gucken.",
+    "size": "Stapelgrösse:",
+    "isEmpty":"Der Stapel ist leer.",
+    "isEmptyError":"Der Stapel ist nicht leer.",
+    "clearStack":"Der Stapel wurde gelöscht!"
+  },
+  "drop":{
+    "en":"Englisch",
+    "sp":"Spanisch",
+    "ge":"Deutsche",
+    "fontFace":"Schriftart",
+    "fontSize":"Schriftgröße",
+    "fontStyle":"Schriftstil",
+    "fontBold":"Fett gedruckt",
+    "fontUnderline":"Unterstreichen",
+    "fontItalic":"Kursiv"
+  }
 }

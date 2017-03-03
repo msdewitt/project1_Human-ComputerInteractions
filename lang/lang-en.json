@@ -4,14 +4,41 @@
     "pop":"Pop",
     "peek":"Peek",
     "size": "Size",
-    "isEmpty": "isEmpty"
+    "isEmpty": "isEmpty",
+    "clearStack": "Clear Stack",
+    "clearLog": "Clear Log"
   },
   "menuBar":{
     "edit": "Edit",
     "settings": "Settings",
-    "tutorials": "Tutorials",
+    "tutorial": "Tutorial",
     "contact": "Contact"
   },
   "inputLabel": "Add to Stack",
-  "heading": "Stack Demo"
+  "heading": "Stack Demo",
+  "contactInfo": "Contact Info",
+
+  "info":{
+    "push": "was pushed onto the stack!",
+    "pushError": "The input box cannot be empty.",
+    "pop": "was popped from the stack.",
+    "popError":"You cannot pop from an empty stack.",
+    "peek": "The top of the stack is:",
+    "peekError":"You cannot peek from an empty stack.",
+    "size": "Stack size:",
+    "isEmpty":"The stack is empty.",
+    "isEmptyError":"The stack is not empty.",
+    "clearStack":"The stack has been cleared!"
+  },
+  "drop":{
+    "en":"English",
+    "sp":"Spanish",
+    "ge":"German",
+    "fontFace":"Font Face",
+    "fontSize":"Font Size",
+    "fontStyle":"Font Style",
+    "fontBold":"Bold",
+    "fontUnderline":"Underline",
+    "fontItalic":"Italic"
+  }
 }
